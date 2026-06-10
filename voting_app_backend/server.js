@@ -13,7 +13,15 @@ const cors = require('cors');
 const userRoutes = require('./routes/userRoutes');
 const candidateRoutes = require('./routes/candidateRoutes');
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://voting-app-v80e.onrender.com"
+    ],
+    credentials: true
+  })
+);
 // Use the router files
 app.use('/user', userRoutes);
 app.use('/candidate', candidateRoutes);

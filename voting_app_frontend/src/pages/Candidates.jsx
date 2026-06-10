@@ -27,7 +27,6 @@ export default function Candidates() {
     try {
       // Using vote/count to get candidates with vote counts
       const res = await api.get('/candidate/vote/count');
-      console.log(res.data);
       setCandidates(res.data);
     } catch {
       toast.error('Failed to load candidates.');
