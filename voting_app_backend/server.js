@@ -16,7 +16,7 @@ const candidateRoutes = require('./routes/candidateRoutes');
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
+      "https://voting-app-nine-mocha.vercel.app/",
       "https://voting-app-v80e.onrender.com"
     ],
     credentials: true
