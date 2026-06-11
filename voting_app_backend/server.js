@@ -16,7 +16,8 @@ const candidateRoutes = require('./routes/candidateRoutes');
 app.use(
   cors({
     origin: [
-      "https://voting-app-nine-mocha.vercel.app" // Removed the trailing slash '/'
+      "https://voting-app-nine-mocha.vercel.app",
+      "https://voting-app-v80e.onrender.com" 
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Explicitly allow these methods
